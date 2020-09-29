@@ -9,7 +9,7 @@
 
 function deepStringSum(obj) {
   let counter = 0;
-  for (var i in obj) {
+  for (let i in obj) {
     if (typeof obj[i] == 'object') counter += deepStringSum(obj[i]);
     if (typeof obj[i] == 'string') counter += obj[i].length
   }
